@@ -1,8 +1,8 @@
 # Solution Deck Planner
 
-`solution-deck-planner` 是一个面向企业汇报与解决方案规划的 Codex Skill。它能够读取项目资料、知识库、历史对话或已有 PPT，围绕汇报对象、决策目标和项目阶段，输出可直接进入 PPT 制作环节的完整方案。
+`solution-deck-planner` 是一个面向企业汇报与解决方案规划的 Agent Skill，支持 Codex 和 Claude Code。它能够读取项目资料、知识库、历史对话或已有 PPT，围绕汇报对象、决策目标和项目阶段，输出可直接进入 PPT 制作环节的完整方案。
 
-当前版本：`v1.0.0`
+当前版本：`v1.1.0`
 
 ## 适用场景
 
@@ -36,7 +36,7 @@
 
 深度策划包含四个确认节点：资料范围、项目情报、核心叙事和制作版本。
 
-## 安装
+## Codex安装
 
 ### Windows
 
@@ -62,6 +62,36 @@ git clone https://github.com/lvjingyang10086/solution-deck-planner.git "$HOME/.c
 
 安装完成后，重新启动Codex或刷新技能列表。
 
+## Claude Code安装
+
+Claude Code采用相同的 `SKILL.md` 标准，可以直接使用本仓库，无需转换文件。官方说明见 [Claude Code Skills](https://code.claude.com/docs/en/skills)。
+
+### Windows个人安装
+
+在PowerShell中执行：
+
+```powershell
+git clone https://github.com/lvjingyang10086/solution-deck-planner.git "$env:USERPROFILE\.claude\skills\solution-deck-planner"
+```
+
+### macOS个人安装
+
+在终端执行：
+
+```bash
+git clone https://github.com/lvjingyang10086/solution-deck-planner.git "$HOME/.claude/skills/solution-deck-planner"
+```
+
+### 项目级安装
+
+在项目根目录执行：
+
+```bash
+git clone https://github.com/lvjingyang10086/solution-deck-planner.git ".claude/skills/solution-deck-planner"
+```
+
+个人安装对所有项目生效；项目级安装仅对当前项目生效。如果Claude Code会话启动时还不存在顶层Skills目录，安装后请重启Claude Code。
+
 ### 更新
 
 进入安装目录并拉取最新版本：
@@ -71,6 +101,8 @@ git pull
 ```
 
 ## 使用方法
+
+### Codex
 
 显式调用：
 
@@ -87,6 +119,22 @@ git pull
 ```text
 审核这份PPT，将它重构为适合TB技术评审的版本。
 ```
+
+### Claude Code
+
+使用斜杠命令显式调用：
+
+```text
+/solution-deck-planner 帮我规划一份面向EB的项目解决方案汇报。
+```
+
+也可以直接用自然语言描述任务，Claude会在匹配Skill描述时自动调用：
+
+```text
+请读取当前项目资料，规划一份面向TB的技术评审材料。
+```
+
+`agents/openai.yaml`用于Codex界面展示，Claude Code会忽略该文件，不影响Skill运行。
 
 当资料不足、涉及历史项目或解决方案规划时，Skill会提示上传相关产品、解决方案、历史汇报或客户资料，也可以指定在线知识库或历史对话供其读取和整理。
 

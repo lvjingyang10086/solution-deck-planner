@@ -2,6 +2,19 @@
 
 本项目遵循语义化版本规则：`主版本.次版本.修订版本`。
 
+## v1.1.0 - 2026-07-05
+
+### 新增
+
+- 增加Claude Code兼容说明。
+- 增加Windows和macOS的Claude Code个人级安装命令。
+- 增加Claude Code项目级安装方式。
+- 增加 `/solution-deck-planner` 显式调用示例和自动调用说明。
+
+### 调整
+
+- 将项目定位从Codex专用Skill调整为同时支持Codex和Claude Code的Agent Skill。
+
 ## v1.0.0 - 2026-07-05
 
 首个正式版本。
@@ -17,4 +30,3 @@
 - 质量评分、异议问题库和终稿完成门槛。
 - 人员阅读版与PPT生成Skill结构化交接格式。
 - 项目记忆草案和终稿后的PPT生成提示。
-
