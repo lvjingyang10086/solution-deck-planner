@@ -1,0 +1,4 @@
+interface:
+  display_name: "解决方案汇报架构师"
+  short_description: "面向不同决策角色规划高质量汇报框架、逐页内容与制作交接方案"
+  default_prompt: "使用 $solution-deck-planner 基于项目资料、汇报对象和决策目标，规划汇报框架、逐页内容及PPT制作交接包。"
