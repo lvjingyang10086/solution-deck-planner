@@ -1,6 +1,6 @@
 ---
 name: solution-deck-planner
-description: Plan decision-ready presentation and solution-deck architectures from project context, files, knowledge bases, historical conversations, or existing PPT/PPTX materials. Use when users need to create, restructure, review, or adapt company capability presentations, product or project solutions, executive briefings, technical reviews, business proposals, or slide-by-slide PPT plans for CIOs, economic buyers (EB), technical buyers (TB), technical experts, business experts, or mixed audiences. Produces narrative strategy, deck framework, per-slide content and layout briefs, evidence and permission checks, speaker notes, objections, and a structured handoff for a PPT-generation skill.
+description: Plan decision-ready presentation and solution-deck architectures from project context, files, knowledge bases, historical conversations, public web intelligence, or existing PPT/PPTX materials. Use when users need to research a target organization or its executives, or create, restructure, review, or adapt company capability presentations, product or project solutions, executive briefings, technical reviews, business proposals, or slide-by-slide PPT plans for CIOs, economic buyers (EB), technical buyers (TB), technical experts, business experts, or mixed audiences. Produces organization intelligence, narrative strategy, deck framework, per-slide content and layout briefs, evidence and permission checks, speaker notes, objections, and a structured handoff for a PPT-generation skill.
 ---
 
 # Solution Deck Planner
@@ -25,13 +25,15 @@ Show the following guidance only when information is insufficient, the work conc
 
 Discover candidate sources first, summarize what is available, and obtain user confirmation before broad reading. Never modify source files, project knowledge, online knowledge bases, or historical conversations. Read [intelligence-intake.md](references/intelligence-intake.md) for deep or source-heavy work.
 
+When the target organization is identifiable, offer a focused public web-intelligence search covering its AI, digitalization, intelligent transformation, strategic goals, major initiatives, and relevant executive statements. Confirm the organization identity, time range, and search scope before browsing unless the user explicitly asks for the search. Read [web-intelligence.md](references/web-intelligence.md).
+
 ## Run the planning workflow
 
 Use four confirmation gates in deep mode. In quick mode, compress gates while preserving decision quality.
 
 ### Gate 1: Confirm sources and project intelligence
 
-Build a concise project intelligence brief covering facts, stage, history, stakeholders, needs, commitments, objections, competitors, evidence, conflicts, sensitive information, and open questions. Extract the customer's own terminology. Distinguish facts, opinions, inferences, and assumptions.
+Build a concise project intelligence brief covering facts, stage, history, stakeholders, needs, commitments, objections, competitors, public organization intelligence, evidence, conflicts, sensitive information, and open questions. Extract the customer's own terminology. Distinguish facts, executive statements, opinions, inferences, and assumptions.
 
 ### Gate 2: Confirm the assignment and narrative
 

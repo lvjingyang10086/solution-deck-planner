@@ -8,7 +8,9 @@
 
 ## Source discovery
 
-Look for user-supplied files, project folders, PPT/PPTX, Word, PDF, spreadsheets, Markdown, online documents, enterprise knowledge bases, historical conversations, and meeting notes. List candidate sources and ask the user to confirm scope before broad reading.
+Look for user-supplied files, project folders, PPT/PPTX, Word, PDF, spreadsheets, Markdown, online documents, enterprise knowledge bases, historical conversations, meeting notes, and relevant public web sources. List candidate sources and ask the user to confirm scope before broad reading.
+
+When a target organization is known, offer a public web-intelligence module. Confirm the exact legal/brand entity, relevant subsidiaries or regions, default time range, and research topics before searching. Follow [web-intelligence.md](web-intelligence.md).
 
 If access fails, name the unavailable source and request authorization, upload, or an alternative. Never imply that inaccessible material was learned.
 
@@ -26,8 +28,8 @@ Produce:
 8. Customer terminology and formal names
 9. Conflicts, stale information, and open questions
 10. Sensitive information and presentation restrictions
+11. Public AI/digital strategy, executive statements, initiatives, targets, and implications for the briefing
 
 For each consequential item record source, date, type (`fact`, `opinion`, `inference`, `assumption`), confidence, and presentation permission.
 
 Use the phrase “已完成本次任务所需的资料读取和知识整理” rather than claiming permanent learning. Do not write back to source knowledge.
-
