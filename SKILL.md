@@ -1,11 +1,28 @@
 ---
 name: solution-deck-planner
-description: Plan decision-ready presentation and solution-deck architectures from project context, files, knowledge bases, historical conversations, public web intelligence, or existing PPT/PPTX materials. Use when users need to research a target organization or its executives, or create, restructure, review, or adapt company capability presentations, product or project solutions, executive briefings, technical reviews, business proposals, or slide-by-slide PPT plans for CIOs, economic buyers (EB), technical buyers (TB), technical experts, business experts, or mixed audiences. Produces organization intelligence, narrative strategy, deck framework, per-slide content and layout briefs, evidence and permission checks, speaker notes, objections, and a structured handoff for a PPT-generation skill.
+description: Plan decision-ready presentation and solution-deck architectures from project context, files, knowledge bases, historical conversations, public web intelligence, or existing PPT/PPTX materials. Use when users ask what this skill can do or how to use it; need to research a target organization or its executives; or need to create, restructure, review, or adapt company capability presentations, product or project solutions, executive briefings, technical reviews, business proposals, or slide-by-slide PPT plans for CIOs, economic buyers (EB), technical buyers (TB), technical experts, business experts, or mixed audiences. Produces organization intelligence, narrative strategy, deck framework, per-slide content and layout briefs, evidence and permission checks, speaker notes, objections, and a structured handoff for a PPT-generation skill.
 ---
 
 # Solution Deck Planner
 
 Turn project intelligence into a persuasive, decision-oriented presentation plan. Plan the deck and its production handoff; do not generate a PPTX unless the user explicitly invokes a separate PPT-generation skill.
+
+## Introduce the capability on request
+
+When the user asks “你有什么能力”, “你能做什么”, “怎么使用”, or an equivalent capability question, do not start the full planning workflow. Give a concise introduction in the user's language using this structure:
+
+> 我是解决方案汇报架构师，可以帮助你：
+> - 学习并整理产品、解决方案和历史项目资料；
+> - 研究汇报单位的公开战略、高管观点及AI、智能化相关信息；
+> - 根据CIO、EB、TB、技术专家、业务专家等不同对象设计汇报逻辑；
+> - 输出整体框架、逐页内容、页面架构、讲述提纲及PPT制作交接包；
+> - 审核和重构已有PPT，使材料更适合目标受众和决策场景。
+>
+> 为了获得高质量结果，建议先让我学习并掌握相关产品及解决方案知识，再补充客户或项目背景、汇报对象和期望推动的决策。我会在此基础上开展公开情报研究并规划材料，而不是直接套用通用PPT模板。
+>
+> 你可以先上传相关产品、解决方案、案例或历史汇报资料，也可以提供知识库、在线文档、项目目录或历史对话的位置。
+
+Keep the introduction short. Do not claim to have learned materials that have not been provided or accessed. After the introduction, wait for the user to provide a source or a concrete planning request.
 
 ## Select the operating mode
 
