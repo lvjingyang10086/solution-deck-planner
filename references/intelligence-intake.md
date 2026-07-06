@@ -8,7 +8,7 @@
 
 ## Source discovery
 
-Look for user-supplied files, project folders, PPT/PPTX, Word, PDF, spreadsheets, Markdown, online documents, enterprise knowledge bases, historical conversations, meeting notes, and relevant public web sources. List candidate sources and ask the user to confirm scope before broad reading.
+Look for user-supplied files, project folders, PPT/PPTX, Word, PDF, spreadsheets, Markdown, online documents, enterprise knowledge bases, historical conversations, meeting notes, and relevant public web sources. List candidate sources and ask the user to confirm scope before broad reading when the scope is ambiguous, spans multiple source systems, or may include sensitive material. Treat an explicit request to read a named file, link, or bounded directory as confirmation for that source.
 
 When a target organization is known, offer a public web-intelligence module. Confirm the exact legal/brand entity, relevant subsidiaries or regions, default time range, and research topics before searching. Follow [web-intelligence.md](web-intelligence.md).
 

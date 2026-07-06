@@ -2,7 +2,7 @@
 
 `solution-deck-planner` 是一个面向企业汇报与解决方案规划的 Agent Skill，支持 Codex、Claude Code 和 WorkBuddy。它能够读取项目资料、知识库、历史对话或已有 PPT，围绕汇报对象、决策目标和项目阶段，输出可直接进入 PPT 制作环节的完整方案。
 
-当前版本：`v1.4.0`
+当前版本：`v1.5.0`
 
 ## 适用场景
 
