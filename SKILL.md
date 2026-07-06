@@ -1,6 +1,6 @@
 ---
 name: solution-deck-planner
-description: Plan decision-ready presentation and solution-deck architectures from project context, files, knowledge bases, historical conversations, public web intelligence, or existing PPT/PPTX materials. Use when users ask what this skill can do or how to use it; need to research a target organization or its executives; or need to create, restructure, review, or adapt company capability presentations, product or project solutions, executive briefings, technical reviews, business proposals, or slide-by-slide PPT plans for CIOs, economic buyers (EB), technical buyers (TB), technical experts, business experts, or mixed audiences. Produces organization intelligence, narrative strategy, deck framework, per-slide content and layout briefs, evidence and permission checks, speaker notes, objections, and a structured handoff for a PPT-generation skill.
+description: Plan, review, or restructure decision-ready presentation and solution-deck architectures from project context, files, knowledge bases, historical conversations, public web intelligence, or existing PPT/PPTX materials. Use for company capability decks, product or project solutions, executive briefings, technical reviews, business proposals, audience-specific deck adaptations, or slide-by-slide PPT plans for CIOs, economic buyers (EB), technical buyers (TB), technical experts, business experts, or mixed audiences. Also use when users ask what solution-deck-planner can do, or request organization/executive research specifically to support a presentation. Produces narrative strategy, deck framework, slide briefs, evidence and permission checks, objections, and an optional structured handoff to a PPT-generation skill. Do not use for generic organization research or direct PPTX generation without a planning or review need.
 ---
 
 # Solution Deck Planner
@@ -9,7 +9,7 @@ Turn project intelligence into a persuasive, decision-oriented presentation plan
 
 ## Introduce the capability on request
 
-When the user asks “你有什么能力”, “你能做什么”, “怎么使用”, or an equivalent capability question, do not start the full planning workflow. Give a concise introduction in the user's language using this structure:
+When the user asks only “你有什么能力”, “你能做什么”, “怎么使用”, or an equivalent capability question about this skill, give a concise introduction in the user's language using this structure:
 
 > 我是解决方案汇报架构师，可以帮助你：
 > - 根据CIO、EB、TB、技术专家、业务专家等不同对象设计汇报逻辑；
@@ -26,7 +26,7 @@ When the user asks “你有什么能力”, “你能做什么”, “怎么使
 >
 > 我会先完成知识与情报整理，与你确认关键结论后，再进入汇报框架和逐页内容规划。
 
-Keep the introduction short. Do not claim to have learned materials that have not been provided or accessed. After the introduction, wait for the user to provide a source or a concrete planning request.
+Keep the introduction short. Do not claim to have learned materials that have not been provided or accessed. If the same message also contains a concrete planning, review, or research request, continue directly into the appropriate mode instead of waiting. Otherwise, wait for the user to provide a source or task.
 
 ## Select the operating mode
 
@@ -37,6 +37,13 @@ Infer the mode and briefly state the choice. Let the user override it.
 - **Existing-deck optimization**: Use when reviewing, restructuring, or adapting an existing PPT/PPTX.
 - If uncertain, ask only questions that materially affect the plan; ask no more than three at a time.
 
+Default interaction policy:
+
+- In quick mode, do not create confirmation stops when the user has already supplied the audience, purpose, desired action, and usable evidence. State any low-risk assumptions and proceed.
+- In deep mode, keep the four gates, but combine adjacent gates when the user has already confirmed their inputs. Treat explicit information in the current request as confirmed; do not ask for it again.
+- In existing-deck mode, first diagnose whether the need is a local refinement, reorder, rebuild, or audience split. Use only the gates needed for the diagnosed scope.
+- Let the user reply with “采用建议”, “跳过”, or “直接出框架”. Never skip a gate when doing so would risk exposing restricted information or presenting an unsupported consequential claim.
+
 ## Guide source intake conditionally
 
 Show the following guidance only when information is insufficient, the work concerns a historical/continuing project, or the user requests product/project solution planning:
@@ -44,7 +51,7 @@ Show the following guidance only when information is insufficient, the work conc
 > 如果你有相关产品、解决方案、历史汇报或客户项目资料，可以直接上传文件或提供所在目录。  
 > 如果相关内容已沉淀在知识库、在线文档或历史对话中，也可以提供链接或名称。我会先完成资料读取与知识整理，经你确认后，再结合项目具体信息、汇报对象和决策目标进行规划输出。
 
-Discover candidate sources first, summarize what is available, and obtain user confirmation before broad reading. Never modify source files, project knowledge, online knowledge bases, or historical conversations. Read [intelligence-intake.md](references/intelligence-intake.md) for deep or source-heavy work.
+Discover candidate sources first and summarize what is available. Obtain confirmation before broad reading when the scope is ambiguous, spans multiple repositories or knowledge sources, or may include sensitive material. A user's explicit request to read a named file, link, or bounded directory counts as confirmation for that source. Never modify source files, project knowledge, online knowledge bases, or historical conversations. Read [intelligence-intake.md](references/intelligence-intake.md) for deep or source-heavy work.
 
 When the target organization is identifiable, offer a focused public web-intelligence search covering its AI, digitalization, intelligent transformation, strategic goals, major initiatives, and relevant executive statements. Confirm the organization identity, time range, and search scope before browsing unless the user explicitly asks for the search. Read [web-intelligence.md](references/web-intelligence.md).
 
@@ -93,12 +100,22 @@ Before declaring a final version:
 - Classify findings as must fix, recommended, or production-stage refinement.
 - Use [quality-review.md](references/quality-review.md) for the scorecard, final gate, and exception handling.
 
-## Deliver two synchronized outputs
+## Scale the deliverable to the mode
 
-Produce:
+For quick planning, default to a compact decision package:
+
+1. Assignment and working assumptions
+2. Message map
+3. Chapter flow and management view
+4. Critical evidence or permission gaps
+5. Recommended next action
+
+Add detailed slide briefs, speaker outlines, objection handling, or structured handoff only when the user requests them or the task explicitly requires a production-ready plan.
+
+For deep planning and production-ready existing-deck work, produce two synchronized outputs:
 
 1. **Human-readable plan**: assignment, audience map, message map, framework, management view, detailed slide briefs, one-page executive summary, speaker outlines, key questions, evidence/assets list, quality summary, and project-memory draft.
-2. **Structured handoff**: machine-readable slide records and deck-level constraints for a PPT-generation skill. Follow [handoff-spec.md](references/handoff-spec.md).
+2. **Structured handoff**: machine-readable slide records and deck-level constraints for a PPT-generation skill. Include it when the user requests a handoff, invokes a downstream PPT-generation workflow, or approves the production version. Follow [handoff-spec.md](references/handoff-spec.md).
 
 Use one content master for all audience variants. Record whether each item is retained, compressed, rewritten, removed, or moved to the appendix.
 

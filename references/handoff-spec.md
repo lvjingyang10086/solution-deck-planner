@@ -19,7 +19,7 @@ Include:
 
 ## Structured package
 
-Use YAML or JSON. Keep deck-level and slide-level records synchronized with the human-readable version.
+Use YAML or JSON. Keep deck-level and slide-level records synchronized with the human-readable version. Use evidence objects rather than untyped strings so the production skill can preserve provenance and readiness.
 
 ```yaml
 deck:
@@ -39,15 +39,34 @@ slides:
     cognitive_change: ""
     key_message: ""
     supporting_points: []
-    evidence: []
+    evidence:
+      - claim: ""
+        source: ""
+        source_date: ""
+        source_type: "fact"
+        confidence: "high"
+        evidence_grade: "A"
+        permission: "approved"
+        status: "verified"
     layout: ""
     visual_type: ""
     visual_focus: ""
     assets: []
     speaker_outline: []
+    transition: ""
     permissions: ""
-    readiness_status: "READY"
+    readiness_status: "CONFIRM"
 ```
+
+Allowed evidence values:
+
+- `source_type`: `fact`, `executive_statement`, `opinion`, `inference`, or `assumption`
+- `confidence`: `high`, `medium`, or `low`
+- `evidence_grade`: `A`, `B`, `C`, or `D`
+- `permission`: `approved`, `internal-only`, `restricted`, or `confirm`
+- `status`: `verified`, `unverified`, `conflicting`, or `missing`
+
+Do not default a slide to `READY`. Assign readiness only after checking content, evidence, assets, and permissions. Use the statuses defined in [slide-brief-schema.md](slide-brief-schema.md).
 
 ## Project-memory draft
 
