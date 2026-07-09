@@ -2,7 +2,7 @@
 
 `solution-deck-planner` 是一个面向企业汇报与解决方案规划的 Agent Skill，支持 Codex、Claude Code 和 WorkBuddy。它能够读取项目资料、知识库、历史对话或已有 PPT，围绕汇报对象、决策目标和项目阶段，输出可直接进入 PPT 制作环节的完整方案。
 
-当前版本：`v1.5.2`
+当前版本：`v1.6.0`
 
 ## 适用场景
 
@@ -25,9 +25,10 @@
 3. 形成项目情报底稿、公开情报简报、汇报任务书和关键角色影响地图。
 4. 建立统一内容母版，并针对不同受众派生版本。
 5. 设计核心主张、消息地图、论证树和章节结构。
-6. 输出逐页标题、内容、版式、图示、证据和讲述提纲。
-7. 检查决策逻辑、证据质量、权限边界和现场异议。
-8. 生成供人员阅读和PPT生成Skill执行的双格式交接包。
+6. 按“PPT汇报黄金法则”检查结论先行、主张证据、页面信息和行动闭环。
+7. 输出逐页标题、内容、版式、图示、证据和讲述提纲。
+8. 检查决策逻辑、证据质量、权限边界和现场异议。
+9. 生成供人员阅读和PPT生成Skill执行的双格式交接包。
 
 ## 工作模式
 
@@ -223,6 +224,7 @@ solution-deck-planner/
     ├── intelligence-intake.md
     ├── narrative-patterns.md
     ├── permission-policy.md
+    ├── presentation-golden-rules.md
     ├── quality-review.md
     ├── slide-brief-schema.md
     └── web-intelligence.md
