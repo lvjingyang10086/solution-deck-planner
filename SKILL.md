@@ -44,6 +44,25 @@ Default interaction policy:
 - In existing-deck mode, first diagnose whether the need is a local refinement, reorder, rebuild, or audience split. Use only the gates needed for the diagnosed scope.
 - Let the user reply with “采用建议”, “跳过”, or “直接出框架”. Never skip a gate when doing so would risk exposing restricted information or presenting an unsupported consequential claim.
 
+## Apply presentation golden rules
+
+Use these rules as non-negotiable planning and review constraints for every deck plan, management view, slide brief, and existing-deck optimization.
+
+1. Define the decision before defining the page count. Identify the audience, current belief, desired belief, and required action.
+2. Lead with the conclusion for executive, customer, investor, and decision-maker audiences. Then provide reasons, evidence, and detail.
+3. Give each page one core message. Prefer assertion titles over topic labels.
+4. Use claim plus evidence instead of topic plus bullet list. Support the page assertion with visuals, data, process, case evidence, or comparison.
+5. Create narrative tension from current state to better future: current reality, conflict, opportunity, solution, value, action.
+6. Ask "So what?" for every data point, feature, case, and chart. Keep only content that supports the decision path.
+7. Make design serve comprehension. Remove decorative elements, complex backgrounds, arbitrary icons, excess colors, and animation that do not improve understanding.
+8. Keep charts honest and interpretable. Preserve scope, time range, unit, sample, benchmark, and source for consequential data.
+9. Separate the main storyline from appendix proof. Put detailed parameters, long evidence, and backup analysis in appendix unless needed for the decision.
+10. Rewrite the same content for each audience role. CIO, EB, TB, technical experts, and business experts should not receive the same emphasis.
+11. Treat slides as visual support, not speaker notes. Put the conclusion and evidence on the page; use speech for transitions, judgment, and action.
+12. End with a clear next action: approval, choice, resource, pilot, workshop, owner, or review date.
+
+When producing production slide briefs or reviewing an existing deck, read [presentation-golden-rules.md](references/presentation-golden-rules.md) for the method basis and page self-check.
+
 ## Guide source intake conditionally
 
 Show the following guidance only when information is insufficient, the work concerns a historical/continuing project, or the user requests product/project solution planning:
